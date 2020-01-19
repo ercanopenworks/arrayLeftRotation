@@ -43,21 +43,16 @@ namespace arraysLeftRotation
         static void Main(string[] args)
         {
 
-            //string[] nd = Console.ReadLine().Split(' ');
-            string[] nd = "5 2".Split(' ');
+            string[] nd = Console.ReadLine().Split(' ');
+            //string[] nd = "5 2".Split(' ');
 
             int n = Convert.ToInt32(nd[0]);
 
             int d = Convert.ToInt32(nd[1]);
-            if ((d<n) && (d>0))
-            {
 
-            }
+            int[] a = Array.ConvertAll(Console.ReadLine().Split(' '), aTemp => Convert.ToInt32(aTemp));
 
-            
-            //int[] a = Array.ConvertAll(Console.ReadLine().Split(' '), aTemp => Convert.ToInt32(aTemp));
-
-            int[] a = Array.ConvertAll("1 2 3 4 5".Split(' '), aTemp => Convert.ToInt32(aTemp)); 
+            //int[] a = Array.ConvertAll("1 2 3 4 5".Split(' '), aTemp => Convert.ToInt32(aTemp)); 
 
             int[] result = rotLeft(a, d);
 
